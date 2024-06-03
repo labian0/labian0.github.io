@@ -1,0 +1,107 @@
+/*
+    GENERAL CSS
+*/
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    background-color: wheat ;
+}
+.page-body{
+
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.clickable{
+    color: blue;
+    text-decoration: underline;
+}
+/*
+    MAIN PAGE CSS
+*/
+#main-page-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#main-page-footer{
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 10px;
+    width: 100vw;
+    text-align: center;
+}
+#main-page-footer > span *{
+    display: inline;
+}
+#main-page-footer ul *{
+    display: inline;
+}
+#main-page-body > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main-page-body > div > * {
+    margin-inline: 22px;
+    max-width: 30vw;
+}
+#main-image-wrapper{
+width: 200px;
+height: 200px;
+}
+#main-image-wrapper img{
+    border-radius: 20%;
+}
+
+/*
+    PROJECTS PAGE CSS
+*/
+
+#projects-grid{
+    height: 100%;
+    width: 100%;
+}
+
+.project-card{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.project-card > .img-wrapper{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.project-card > .img-wrapper > img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: .4s ease-out;
+}
+
+.project-card:hover > .img-wrapper > img{
+    transform: scale(1.5);
+}
+
+.project-card > .card-title{
+    height: 20%;
+    width: 100%;
+    margin-top:-20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(182, 182, 182, 0.4);
+    text-align: center;
+    color: white;
+}
