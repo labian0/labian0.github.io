@@ -56,14 +56,24 @@ height: 200px;
 #main-image-wrapper img{
     border-radius: 20%;
 }
+.extendable-p.extended{
+    cursor:zoom-out;
+}
+.extendable-p:not(.extended){
+    cursor: zoom-in;
+}
 
 /*
     PROJECTS PAGE CSS
 */
-
+#projects-page-body{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
 #projects-grid{
-    height: 100%;
-    width: 100%;
+    width:fit-content;
 }
 
 .project-card{
@@ -86,11 +96,11 @@ height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: center;
-    transition: .4s ease-out;
+    transition: .2s ease-in-out;
 }
 
 .project-card:hover > .img-wrapper > img{
-    transform: scale(1.5);
+    transform: scale(1.3);
 }
 
 .project-card > .card-title{
