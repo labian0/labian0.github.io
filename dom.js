@@ -13,9 +13,9 @@ const setCardWithCursor = (card) => {
 }
 const hideCursor = (card) => {
     let cursor = card.querySelector(".pointer-space > .pointer.img-wrapper > img")
-    cursor.className = "hidden"    
+    cursor.className = ""    
 }
 const showCursor = (card) => {
     let cursor = card.querySelector(".pointer-space > .pointer.img-wrapper > img")
-    cursor.className = "" 
+    cursor.className = "shown" 
 }
