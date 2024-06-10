@@ -12,7 +12,9 @@ body{
     width: 100vw;
     height: 100vh;
 }
-
+a{
+    text-decoration: none;
+}
 @media only screen and (min-width: 600px) {
     .shown{
         display: block !important;
@@ -68,12 +70,6 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.extendable-p.extended{
-    cursor:zoom-out;
-}
-.extendable-p:not(.extended){
-    cursor: zoom-in;
-}
 
 /*
     PROJECTS PAGE CSS
@@ -100,13 +96,13 @@ justify-content: center;
     margin: 10px;
     overflow: hidden;
 }
-.project-card > .img-wrapper{
+.project-card .img-wrapper{
     width: 200px;
     height: 200px;
     overflow: hidden;
 }
 
-.project-card > .img-wrapper > img{
+.project-card .img-wrapper > img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -114,11 +110,11 @@ justify-content: center;
     transition: .2s ease-in-out;
 }
 
-.project-card:hover > .img-wrapper > img{
+.project-card:hover .img-wrapper > img{
     transform: scale(1.3);
 }
 
-.project-card > .card-title{
+.project-card .card-title{
     height: 20%;
     width: 100%;
     margin-top:-20%;
@@ -126,7 +122,7 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(182, 182, 182, 0.4);
+    background-color: rgba(182, 182, 182, 0.8);
     text-align: center;
     color: white;
 }
