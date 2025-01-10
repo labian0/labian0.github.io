@@ -110,7 +110,7 @@ justify-content: center;
     transition: .2s ease-in-out;
 }
 
-.project-card:hover .img-wrapper > img{
+.project-card:hover .img-wrapper:not(.pointer) > img{
     transform: scale(1.3);
 }
 
